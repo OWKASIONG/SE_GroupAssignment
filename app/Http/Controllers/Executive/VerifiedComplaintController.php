@@ -136,9 +136,6 @@ class VerifiedComplaintController extends Controller
                     'status_id' => $status_id,
                     'complaint_action_id' => $complaint_action,
                 ]);
-                $vc->status_id = $status_id;
-                $vc->complaint_action_id = $complaint_action;
-                $vc->save();
             }
             else {
                 $complaint_logging = ComplaintLogging::create([
@@ -169,11 +166,13 @@ class VerifiedComplaintController extends Controller
 
                     $processing_document->save();
                 }
-
-                $vc->status_id = $status_id;
-                $vc->complaint_action_id = $complaint_action;
-                $vc->save();
             }
+            $vc->status_id = $status_id;
+            $vc->complaint_action_id = $complaint_action;
+            $vc->save();
+            $vc->complaints()->update([
+                'status_id' => $status_id,
+            ]);
         }
         else if ($vc->complaint_action_id == 3) {
             $request->validate([
@@ -222,6 +221,12 @@ class VerifiedComplaintController extends Controller
             $vc->status_id = $status_id;
             $vc->complaint_action_id = $complaint_action;
             $vc->save();
+            $vc->status_id = $status_id;
+            $vc->complaint_action_id = $complaint_action;
+            $vc->save();
+            $vc->complaints()->update([
+                'status_id' => $status_id,
+            ]);
         }
 
         return redirect()->route('executive.verified_complaints.show', ['verified_complaint' => $vc->id]);
