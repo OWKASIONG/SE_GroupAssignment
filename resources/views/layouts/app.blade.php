@@ -35,14 +35,14 @@
             <div class="container d-flex justify-content-between">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                 <div>
-                    <h4 class="m-auto">{{ Auth::user()->first_name.' '.Auth::user()->last_name }}</h4>
                     <div class="d-flex justify-content-between">
-                        <div class="m-auto me-2">
-                            <img src="{{ asset(Auth::user()->GetAvatar()) }}" alt="" width="30px" height="30px" class="rounded-circle">
-                        </div>
+                        <img src="{{ asset(Auth::user()->GetAvatar()) }}" alt="" width="45px" height="45px" class="rounded-circle">
+                        &nbsp;&nbsp;
+                        <h4 class="m-auto">{{ Auth::user()->first_name.' '.Auth::user()->last_name }}</h4>
+                        &nbsp;&nbsp;
                         <form action="{{ route('logout') }}" method="POST" class="">
                             @csrf
-                            <button type="submit" class="btn btn-danger text-white">Logout</button>
+                            <button type="submit" width="45px" height="45px" class="btn btn-danger text-white">Logout</button>
                         </form>
                     </div>
                 </div>
@@ -51,10 +51,10 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <a href="{{ route('home') }}" class="text-decoration-none"><h2 class="text-black text-center">e-Complaint</h2></a>
+            <a href="{{ route('home') }}" class="text-decoration-none"><h2 class="text-black text-center">NEUC Complaint</h2></a>
 
             <div class="d-flex justify-content-center my-3">
-                <img src="{{ asset(Auth::user()->GetAvatar()) }}" alt="profile.png" height="350px">
+                <img src="{{ asset(Auth::user()->GetAvatar()) }}" alt="profile.png" height="200px">
             </div>
 
             <div class="text-center">

@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5{
 }
 
 .login_page_bng{
-    background-color: #FAEAB1;
+    background-color: #949494;
 }
 
 /* Side Navigation */
@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #FECD70;
+  background-color: #6b6b6b;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
