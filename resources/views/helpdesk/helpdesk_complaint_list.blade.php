@@ -42,7 +42,6 @@
                     </tr>
                 </thead>
                 <tbody class="table-group-divider table-secondary">
-                    {{-- zi keong - loop all the content base on the database, --}}
                     @if ($complaints->count() > 0)
                         @foreach ($complaints as $complaint)
                             <tr>
