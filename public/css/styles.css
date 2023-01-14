@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5{
 }
 
 .login_page_bng{
-    background-color: #949494;
+    background-color: #ffffff;
 }
 
 /* Side Navigation */
@@ -19,7 +19,7 @@ h1,h2,h3,h4,h5{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #6b6b6b;
+  background-color: #555555;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5{
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 30px;
   color: #272829;
   display: block;
   transition: 0.3s;

@@ -31,12 +31,12 @@
 </head>
 <body class="login_page_bng ">
     @if (Auth::check())
-        <div class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="navbar navbar-expand-md navbar-light bg-primary shadow-sm">
             <div class="container d-flex justify-content-between">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
                 <div>
                     <div class="d-flex justify-content-between">
-                        <img src="{{ asset(Auth::user()->GetAvatar()) }}" alt="" width="45px" height="45px" class="rounded-circle">
+                        <img src="{{ asset(Auth::user()->GetAvatar()) }}" alt="" width="40px" height="40px" class="rounded-circle">
                         &nbsp;&nbsp;
                         <h4 class="m-auto">{{ Auth::user()->first_name.' '.Auth::user()->last_name }}</h4>
                         &nbsp;&nbsp;
@@ -51,7 +51,7 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <a href="{{ route('home') }}" class="text-decoration-none px-2"><h2 class="text-black text-center">e-Complaint</h2></a>
+            <a href="{{ route('home') }}" class="text-decoration-none px-2"><h2 class="text-black text-center">NEUC_Complaint</h2></a>
 
             <div class="d-flex justify-content-center my-3">
                 <div style="width:200px;
