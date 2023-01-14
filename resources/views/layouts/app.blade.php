@@ -51,10 +51,16 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <a href="{{ route('home') }}" class="text-decoration-none"><h2 class="text-black text-center">NEUC Complaint</h2></a>
+            <a href="{{ route('home') }}" class="text-decoration-none px-2"><h2 class="text-black text-center">e-Complaint</h2></a>
 
             <div class="d-flex justify-content-center my-3">
-                <img src="{{ asset(Auth::user()->GetAvatar()) }}" alt="profile.png" height="200px">
+                <div style="width:200px;
+                    height:200px;
+                    background-image:url('{{ asset(Auth::user()->GetAvatar()) }}');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;"
+                    class="rounded-circle border border-primary"></div>
             </div>
 
             <div class="text-center">
