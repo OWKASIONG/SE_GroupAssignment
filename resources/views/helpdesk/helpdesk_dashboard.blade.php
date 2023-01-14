@@ -15,6 +15,8 @@
 
     </div>
 
+    <hr style="height:2px;border-width:3px;color:gray;background-color:black">
+
     <h2 class="text-center m-3">All Complaints</h2>
 
     <div class="row">
