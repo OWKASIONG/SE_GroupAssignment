@@ -25,7 +25,6 @@
                     </div>
                 </div>
 
-                {{-- zi keong  please follow the file load the image and video--}}
                 @if ($complaint->img_or_video_path != null && $complaint->img_or_video_name != null)
                     @if ($complaint->is_video)
                         <div class="col-sm-6 col-12">

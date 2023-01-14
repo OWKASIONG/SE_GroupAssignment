@@ -4,17 +4,6 @@
     <div class="d-flex justify-content-center">
         <div class="col-md-7 col-lg-8">
 
-            @if ($verified_complaint->status_id == 6)
-                <div class="mt-3 mb-5 d-lg-flex justify-content-between">
-                    <div class="col-lg-6 col-12">
-                        <h3>Report remark:</h3>
-                        <div class="fs-5 text-bg-light p-3 rounded">
-                            {{ $verified_complaint->finalize_remark }}
-                        </div>
-                    </div>
-                </div>
-            @endif
-
             <div class="d-flex justify-content-between  mb-3">
                 <h3 class="mb-3 text-center">Complaint Detail</h3>
                 <div class="btn btn-lg text-bg-{{ $verified_complaint->status->GetColor() }}">
@@ -112,7 +101,7 @@
                         </div>
 
                         <div class="col-lg-6 col-12 my-3">
-                            <label for="executive_remark" class="form-label">Remark</label>
+                            <label for="executive_remark" class="form-label">Report Remark</label>
 
                             @if ($is_not_yet_accept_complaint)
                                 <textarea class="form-control" name="remark" id="executive_remark" cols="15" rows="5" disabled>{{ $verified_complaint->description }}</textarea>
