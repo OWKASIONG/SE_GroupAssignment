@@ -5,7 +5,7 @@
 <div class="container">
 
 
-    <h2 class="text-center m-3">Ongoing Complaints</h2>
+    <h2 class="text-center m-3">Complaints Process</h2>
 
     <div class="row">
         {{-- foreach all the status--}}

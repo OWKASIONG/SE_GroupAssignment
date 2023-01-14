@@ -48,7 +48,7 @@ footer {
 <a href="https://www.facebook.com/ow.kasiong/" class="fa fa-facebook"></a>
 <a href="https://www.linkedin.com/in/ow-ka-siong-b24871226/" class="fa fa-linkedin"></a>
 <a href="https://www.instagram.com/ka_siongow/" class="fa fa-instagram"></a> 
-<p>OW KA SIONG 2250169-BSE</p>
+<p>OW KA SIONG 2250169-BSE / CONTACT NUMBER: 012-345-6789</p>
 </footer>
 
 </body>
