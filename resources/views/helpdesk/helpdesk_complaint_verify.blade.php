@@ -101,7 +101,7 @@
                         </div>
 
                         <div class="col-lg-6 col-12 my-3">
-                            <label for="executive_remark" class="form-label">Report Remark</label>
+                            <label for="executive_remark" class="form-label">Remark</label>
 
                             @if ($is_not_yet_accept_complaint)
                                 <textarea class="form-control" name="remark" id="executive_remark" cols="15" rows="5" disabled>{{ $verified_complaint->description }}</textarea>
